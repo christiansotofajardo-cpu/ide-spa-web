@@ -1,0 +1,13 @@
+
+# IDE SpA — Institutional Website
+# Bilingual static website: English / Spanish
+
+services:
+  - type: web
+    name: ide-spa-web
+    runtime: static
+    repo: https://github.com/christiansotofajardo-cpu/ide-spa-web
+    branch: main
+    buildCommand: "echo 'IDE SpA static website ready'"
+    staticPublishPath: ./public
+    autoDeployTrigger: commit
